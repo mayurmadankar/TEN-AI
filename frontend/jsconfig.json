@@ -1,9 +1,10 @@
 {
-    "compilerOptions": {
-      "baseUrl": "./",
-      "paths": {
-        "@/*": ["src/*"]
-      }
-    }
-  }
-  
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "skipLibCheck": true // Add this line to skip type checking of all declaration files
+  },
+  "exclude": ["node_modules"] // Add this line to exclude node_modules from type checking
+}

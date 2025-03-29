@@ -47,7 +47,7 @@ const Header = () => {
       <div className=" flex justify-between items-center">
         {/* Logo */}
         <motion.h1
-          className="text-2xl font-bold "
+          className="text-2xl font-bold"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}

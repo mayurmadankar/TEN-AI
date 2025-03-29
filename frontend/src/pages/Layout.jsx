@@ -5,11 +5,11 @@ import {Outlet} from "react-router-dom";
 
 function Layout() {
   return (
-    <>
+    <main className='dark:bg-black'>
         <Header />
         <Outlet />
         <Footer />
-    </>
+    </main>
   )
 }
 

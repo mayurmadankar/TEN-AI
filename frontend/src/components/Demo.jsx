@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Separator } from './ui/separator';
 import { Landmark, Mic, Store, TreePalm, Umbrella } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,6 +6,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+import { useTheme } from '../context/ThemeContext';
 
 const demoData = [
   {
@@ -30,16 +31,25 @@ const demoData = [
   },
 ];
 
-const brands = [
-"https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/66f1636aec141ffd1f7e8606_Groww%20Logo.svg",
-
-"https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/66f1636a41f116be5d13cef3_Super%20Money%20Logo.svg",
-
-"https://cdn.prod.website-files.com/66796a37e9aadbf3722c4340/66f1636adb5267e647133557_Cult%20Fit.svg",
-]
 
 function Demo() {
   const [demoType, setDemoType] = useState(null);
+  let [brands, setBrands] = useState([
+    '/cultfit.svg', 
+    "/grow.svg", 
+    "/supermoney.svg"
+  ]);
+
+  const {theme} = useTheme();
+
+  useEffect(() => {
+    if(theme === "dark"){
+      setBrands(['/cultfit_dark.svg', "/grow_dark.svg", "/supermoney_dark.svg"]);
+    }
+    else{
+      setBrands(['/cultfit.svg', "/grow.svg", "/supermoney.svg"]);
+    }
+  }, [theme])
 
   const typeHandler = (type) => {
     setDemoType(type);
@@ -96,16 +106,16 @@ function Demo() {
           <p className="text-sm font-semibold text-gray-600">Trusted by Leading Brands</p>
         
           <div className="w-[22rem] relative overflow-hidden">
-              <div className="fade-overlay left-fade"></div>
+              {theme === "light" && <div className="fade-overlay left-fade"></div>}
               <Swiper
-                spaceBetween={30} // Space between slides
+                spaceBetween={25} // Space between slides
                 slidesPerView={2} // Number of slides visible at a time
                 loop={true} // Enable infinite loop
                 autoplay={{
                   delay: 0, // Delay between slides (in milliseconds)
                   disableOnInteraction: false, // Keep autoplay running even after user interaction
                 }}
-                speed={1200}
+                speed={3000}
 
                 className='mySwiper'
                 modules={[Autoplay]} // Add the Autoplay module
@@ -122,7 +132,7 @@ function Demo() {
                     </SwiperSlide>
                 ))}
               </Swiper>
-              <div className="fade-overlay right-fade"></div>
+              {theme === "light" &&  <div className="fade-overlay right-fade"></div>}
           </div>
       </div>
     </>

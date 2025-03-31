@@ -4,13 +4,13 @@ import { motion } from "motion/react";
 
 function Hero() {
 	return (
-		<BackgroundLines className="min-h-[60vh] w-full ">
+		<BackgroundLines className="hero-section min-h-[80vh] sm:min-h-[60vh] w-full ">
 			<section className="h-full flex flex-col gap-10 text-center w-full items-center justify-center">
 				<div className="flex flex-col gap-3">
-					<h1 className="text-6xl font-bold">
+					<h1 className="text-5xl sm:text-6xl font-bold">
 						AI Agents <br /> to Re-imagine
 					</h1>
-					<h1 className="text-6xl font-bold text-gray-500">
+					<h1 className="text-5xl sm:text-6xl font-bold text-gray-500">
 						Enterprise Workflows
 					</h1>
 				</div>

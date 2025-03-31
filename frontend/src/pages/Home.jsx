@@ -1,6 +1,7 @@
 import Demo from '@/components/Demo'
 import Hero from '@/components/Hero'
 import Offerings from '@/components/Offerings'
+import Reviews from '@/components/Reviews';
 import VideoCarousel from '@/components/VideoCarousel'
 import React from 'react'
 
@@ -11,6 +12,7 @@ function Home() {
         <Demo />
         <VideoCarousel/>
         <Offerings/>
+        <Reviews/>
     </div>
   )
 }

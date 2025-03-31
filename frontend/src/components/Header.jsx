@@ -69,7 +69,7 @@ const Header = () => {
 								<MenubarContent>
 									<MenubarItem>Custom Ai Agents</MenubarItem>
 									<MenubarItem>
-										All Survices For StartUp
+										All Services For StartUp
 									</MenubarItem>
 									<MenubarSeparator />
 									<MenubarSub>

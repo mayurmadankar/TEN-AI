@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 function Hero() {
 	return (
-		<BackgroundLines className="hero-section min-h-[80vh] sm:min-h-[60vh] w-full ">
+		<BackgroundLines className="hero-section min-h-[80vh] w-full ">
 			<section className="h-full flex flex-col gap-10 text-center w-full items-center justify-center">
 				<div className="flex flex-col gap-3">
 					<h1 className="text-5xl sm:text-6xl font-bold">

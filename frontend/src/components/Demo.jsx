@@ -79,6 +79,7 @@ function Demo() {
       initial={{opacity : 0, y : 50}}
       animate={isVisible ? {opacity : 1, y : 0} : {}}
       transition={{duration : 1}}
+      className='flex flex-col items-center'
     >
       <div className='flex flex-col lg:w-[80vw] w-[90%] min-h-[80vh] overflow-hidden border border-gray-600 rounded-lg'>
           <div className='w-full flex p-3 items-center gap-2'>
@@ -106,8 +107,12 @@ function Demo() {
                     ))}
                     <select 
                       name="demo" 
-                      className='block lg:hidden bg-white px-4 py-2 font-semibold text-sm outline-0 rounded-full'
-                      onChange={(e) => setDemoType(e.target.value)}
+                      className='block lg:hidden bg-white text-black px-4 py-2 font-semibold text-sm outline-0 rounded-full'
+                      onChange={(e) => {
+                        if(e.target.value !== "#")  setDemoType(e.target.value)
+                        else setDemoType(null)
+                        }
+                      }
                     >
                       <option value="#" className='opacity-70'>--Select Usage --</option>
                       <option value="Travel">Travel</option>

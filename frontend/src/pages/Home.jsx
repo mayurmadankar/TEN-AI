@@ -1,3 +1,4 @@
+import { Contact } from '@/components/Contact';
 import Demo from '@/components/Demo'
 import Hero from '@/components/Hero'
 import Offerings from '@/components/Offerings'
@@ -13,6 +14,7 @@ function Home() {
         <Demo />
         <VideoCarousel/>
         <Offerings/>
+        <Contact />
         <Reviews/>
         <Impact/>
     </div>

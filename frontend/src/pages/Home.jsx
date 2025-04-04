@@ -14,9 +14,9 @@ function Home() {
         <Demo />
         <VideoCarousel/>
         <Offerings/>
-        <Contact />
         <Reviews/>
         <Impact/>
+        <Contact />
     </div>
   )
 }

@@ -41,13 +41,13 @@ const Header = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed w-full z-50 transition-all duration-300 ${
+      className={`fixed max-w-screen w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-black/80 dark:bg-gray-800 text-gray-300 backdrop-blur-lg shadow-lg"
           : "bg-white dark:bg-black border-b-2"
       }`}
     >
-      <div className="flex justify-between items-center px-8">
+      <div className="flex justify-between items-center px-8 py-2">
         <motion.h1
           className="text-2xl font-bold"
           initial={{ opacity: 0 }}
@@ -189,7 +189,7 @@ const Header = () => {
           >
             {theme === "dark" ? <Sun /> : <Moon />}
           </button>
-          <div className="flex gap-1 items-center bg-blue-500 hover:bg-black transition-all cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold">
+          <div className="hidden sm:flex gap-1 items-center bg-blue-500 hover:bg-black transition-all cursor-pointer text-white rounded-full px-4 py-2 text-sm font-semibold">
             <span>Let's Talk</span> <MoveRight size={16} />
           </div>
         </div>

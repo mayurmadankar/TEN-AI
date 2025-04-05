@@ -8,7 +8,7 @@ const Impact = () => {
       });
   return (
 
-  <div className='bg-blue-950 w-full'>
+  <div className='bg-blue-950 max-w-[100vw] overflow-hidden'>
       <div className='lg:flex flex-col lg:flex-row justify-evenly text-amber-50'>
        <div className='p-12 lg:mt-48'>
         <div className='flex p-2 gap-2 w-28 rounded-full border'>
@@ -18,7 +18,7 @@ const Impact = () => {
             alt="impactLogo" />
             <h1>Impact</h1>
         </div>
-        <h1 className='font-bold text-5xl w-80  mt-5'>AI Powered Enterprise</h1>
+        <h1 className='font-bold text-3xl sm:text-5xl mt-5'>AI Powered Enterprise</h1>
         <p className='w-72 mt-6 text-gray-400'>Organizations leveraging Nurix Agents and Agent Assist experience significant performance enhancement</p>
        </div>
        <div className='border'>
@@ -31,30 +31,30 @@ const Impact = () => {
            </div>
            <div>
            <svg className='h-40 w-40' viewBox="0 0 477 212" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <motion.path
-        className="x-arrow-2"
-        opacity="0.4"
-        d="M306.788 101.018L283.567 136.585L283.148 137.251L234.422 211.845H180L255.414 102.843L183.924 0H240.441L283.148 65.0135L285.034 67.9029L306.788 101.018Z"
-        fill="#D6F549"
-        {...fadeIn(0.4)}
-        style={{ opacity: 0 }}
-      />
-      <motion.path
-        className="x-arrow-3"
-        opacity="0.6"
-        d="M216.788 101.018L193.567 136.585L193.148 137.251L144.422 211.845H90L165.414 102.843L93.924 0H150.441L193.148 65.0135L195.034 67.9029L216.788 101.018Z"
-        fill="#D6F549"
-        {...fadeIn(0.6)}
-        style={{ opacity: 0 }}
-      />
-      <motion.path
-        className="x-arrow-4"
-        opacity="0.8"
-        d="M126.788 101.018L103.567 136.585L103.148 137.251L54.422 211.845H0L75.4135 102.843L3.92401 0H60.4413L103.148 65.0135L105.034 67.9029L126.788 101.018Z"
-        fill="#D6F549"
-        {...fadeIn(0.8)}
-        style={{ opacity: 1 }}
-      />
+          <motion.path
+            className="hidden sm:block x-arrow-2"
+            opacity="0.4"
+            d="M306.788 101.018L283.567 136.585L283.148 137.251L234.422 211.845H180L255.414 102.843L183.924 0H240.441L283.148 65.0135L285.034 67.9029L306.788 101.018Z"
+            fill="#D6F549"
+            {...fadeIn(0.4)}
+            style={{ opacity: 0 }}
+          />
+          <motion.path
+            className="hidden sm:block x-arrow-3"
+            opacity="0.6"
+            d="M216.788 101.018L193.567 136.585L193.148 137.251L144.422 211.845H90L165.414 102.843L93.924 0H150.441L193.148 65.0135L195.034 67.9029L216.788 101.018Z"
+            fill="#D6F549"
+            {...fadeIn(0.6)}
+            style={{ opacity: 0 }}
+          />
+          <motion.path
+            className="hidden sm:block x-arrow-4"
+            opacity="0.8"
+            d="M126.788 101.018L103.567 136.585L103.148 137.251L54.422 211.845H0L75.4135 102.843L3.92401 0H60.4413L103.148 65.0135L105.034 67.9029L126.788 101.018Z"
+            fill="#D6F549"
+            {...fadeIn(0.8)}
+            style={{ opacity: 1 }}
+          />
     </svg>
            </div>
         </div>

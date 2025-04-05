@@ -197,7 +197,7 @@ function DemoType({type, icon, typeHandler, demoType, className = ""}){
 
 function DemoTypeCard({type, data}){
   return (
-    <div className='flex max-w-[80%] dark:text-black bg-white rounded-lg flex-col gap-3 justify-center p-8'>
+    <div className='flex w-full max-w-[95%] sm:max-w-[80%] dark:text-black bg-white rounded-lg flex-col gap-3 justify-center p-8'>
         <h1 className='font-bold text-2xl'>Our {type} Agents</h1>
         <p className='text-sm text-gray-600'>{data}</p>
     </div>

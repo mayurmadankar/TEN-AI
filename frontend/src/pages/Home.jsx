@@ -5,6 +5,7 @@ import Hero from '@/components/Hero'
 import Offerings from '@/components/Offerings'
 import Reviews from '@/components/Reviews';
 import VideoCarousel from '@/components/VideoCarousel'
+import Impact from '@/components/Impact';
 import React from 'react'
 
 function Home() {
@@ -14,9 +15,10 @@ function Home() {
         <Demo />
         <VideoCarousel/>
         <Offerings/>
+        <Reviews/>
+        <Impact/>
         {/* <Experts /> */}
         <Contact />
-        <Reviews/>
     </div>
   )
 }

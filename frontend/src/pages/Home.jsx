@@ -1,5 +1,6 @@
 import { Contact } from '@/components/Contact';
 import Demo from '@/components/Demo'
+// import Experts from '@/components/Experts';
 import Hero from '@/components/Hero'
 import Offerings from '@/components/Offerings'
 import Reviews from '@/components/Reviews';
@@ -13,6 +14,7 @@ function Home() {
         <Demo />
         <VideoCarousel/>
         <Offerings/>
+        {/* <Experts /> */}
         <Contact />
         <Reviews/>
     </div>

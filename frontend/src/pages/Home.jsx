@@ -8,6 +8,7 @@ import VideoCarousel from '@/components/VideoCarousel'
 import Impact from '@/components/Impact';
 import React from 'react'
 
+
 function Home() {
   return (
     <div className='flex flex-col items-center'>
@@ -19,6 +20,7 @@ function Home() {
         <Impact/>
         <Experts />
         <Contact />
+        
     </div>
   )
 }

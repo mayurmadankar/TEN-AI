@@ -8,7 +8,7 @@ const Impact = () => {
       });
   return (
 
-  <div className='bg-blue-950 max-w-[100vw] overflow-hidden'>
+  <div className='bg-blue-950 w-full overflow-hidden'>
       <div className='lg:flex flex-col lg:flex-row justify-evenly text-amber-50'>
        <div className='p-12 lg:mt-48'>
         <div className='flex p-2 gap-2 w-28 rounded-full border'>

@@ -87,17 +87,18 @@ const Header = () => {
                           </MenubarItem>
                           <hr className="h-[0.5px] bg-gray-300 w-full" />
                           <MenubarItem className="group">
-                            <div className="flex items-start gap-2">
+                            <Link to='/aiservices' className="flex items-start gap-2">
                               <Handshake size={18} className="mt-1" />
                               <span className="flex flex-col text-left text-[16px] w-38">
                                 <span className="group-hover:text-blue-500 font-medium">
+
                                   All Services For StartUp
                                 </span>
                                 <p className="text-[12px] text-gray-500">
                                   Partner to build your AI products from 0 to 1
                                 </p>
                               </span>
-                            </div>
+                            </Link>
                           </MenubarItem>
                         </div>
                         <div className="w-px bg-gray-300 self-stretch mx-1" />

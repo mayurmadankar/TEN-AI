@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Boxes } from "@/components/ui/background-boxes"; // ✅ Ensure this path is correct
-import { cn } from "@/lib/utils"; // Needed if you're using the cn utility
+import { Boxes } from "@/components/ui/background-boxes"; 
 
 const LastHero = () => {
   const [scrollX, setScrollX] = useState(0);

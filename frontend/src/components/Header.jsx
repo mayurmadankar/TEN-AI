@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 import {
 	Briefcase,
   Handshake,
@@ -71,7 +73,7 @@ const Header = () => {
                       <div className="flex items-start p-2 min-w-[400px]">
                         <div className="flex flex-col pr-4">
                           <MenubarItem className="group">
-                            <div className="gap-2 flex items-start">
+                            <Link to="/custom-ai-agents" className="gap-2 flex items-start">
                               <Headset size={18} className="mt-1" />
                               <span className="flex flex-col text-left text-[16px] w-38">
                                 <span className="group-hover:text-blue-500 font-medium">
@@ -81,7 +83,7 @@ const Header = () => {
                                   Automate end-to-end workflows with tailored solution
                                 </p>
                               </span>
-                            </div>
+                              </Link>
                           </MenubarItem>
                           <hr className="h-[0.5px] bg-gray-300 w-full" />
                           <MenubarItem className="group">

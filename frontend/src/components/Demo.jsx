@@ -141,7 +141,7 @@ function Demo() {
           </div>
       </div>
 
-      <div className="flex flex-col w-full items-center mt-3 gap-2 text-black">
+      {/* <div className="flex flex-col w-full items-center mt-3 gap-2 text-black">
 
           <p className="text-sm font-semibold text-gray-600">Trusted by Leading Brands</p>
         
@@ -174,7 +174,7 @@ function Demo() {
               </Swiper>
               {theme === "light" &&  <div className="fade-overlay right-fade"></div>}
           </div>
-      </div>
+      </div> */}
     </motion.div>
   )
 }

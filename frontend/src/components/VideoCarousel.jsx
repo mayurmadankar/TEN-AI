@@ -41,7 +41,7 @@ export default function VideoCarousel() {
   };
 
   return (
-    <div className="relative flex flex-col items-center gap-12 mx-auto px-4 sm:px-8 lg:px-16">
+    <div className="mt-16 relative flex flex-col items-center gap-12 mx-auto px-4 sm:px-8 lg:px-16">
       <span className="flex w-full flex-col items-center text-center gap-8">
         <h1 className="w-full max-w-2xl font-semibold text-3xl sm:text-4xl">
           Discover How TEN AI Can Transform Your Workflows

@@ -13,7 +13,7 @@ export function Contact() {
       <h1 className={"text-center text-3xl md:text-5xl font-bold text-white relative z-20"}>
         Start Your Journey with TenAI Today
       </h1>
-      <Button className="z-50 cursor-pointer p-5 mt-6 text-sm text-black hover:text-white bg-white hover:bg-black rounded-full transition-all duration-300 ease-in-out">
+      <Button className="z-40 cursor-pointer p-5 mt-6 text-sm text-black hover:text-white bg-white hover:bg-black rounded-full transition-all duration-300 ease-in-out">
         Contact us <MoveRight />
       </Button>
     </div>

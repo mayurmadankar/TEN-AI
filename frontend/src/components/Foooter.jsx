@@ -39,7 +39,7 @@ import {
               </div>
   
             
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <p className="text-gray-300 mb-2 font-medium">Certifications</p>
                 <ul className="flex flex-wrap gap-6 sm:w-[80%]">
                   <li className="flex items-center gap-2 text-gray-400">
@@ -59,7 +59,7 @@ import {
                     <span>SOC2</span>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
   
            

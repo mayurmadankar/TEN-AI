@@ -56,8 +56,10 @@ const Header = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <span className="dark:text-white">TEN</span>
-          <span className="text-blue-500">AI</span>
+          <Link to="/">
+            <span className="dark:text-white">TEN</span>
+            <span className="text-blue-500">AI</span>
+          </Link>
         </motion.h1>
 
         <nav className="hidden md:flex">

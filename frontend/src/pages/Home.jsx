@@ -6,8 +6,9 @@ import Offerings from "@/components/Offerings";
 import Reviews from "@/components/Reviews";
 import VideoCarousel from "@/components/VideoCarousel";
 import Impact from "@/components/Impact";
-import React from "react";
+import React, { useState } from "react";
 import Insights from "@/components/Insights";
+import ExploreBlogs from "@/components/ExploreBlogs";
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
       <Reviews />
       <Impact />
       <Experts />
-      <Insights />
+      <Insights isHomePage={true} />
       <Contact />
     </div>
   );

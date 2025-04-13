@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import {
-	Briefcase,
+  Briefcase,
   Handshake,
   Headset,
   Menu,
@@ -12,14 +12,14 @@ import {
   Newspaper,
   ShieldCheck,
   Sun,
-  Tag,
+  Tag
 } from "lucide-react";
 import {
   Menubar,
   MenubarContent,
   MenubarItem,
   MenubarMenu,
-  MenubarTrigger,
+  MenubarTrigger
 } from "@/components/ui/menubar";
 import { CaretDownIcon } from "@radix-ui/react-icons";
 import { useTheme } from "@/context/ThemeContext";
@@ -73,25 +73,31 @@ const Header = () => {
                       <div className="flex items-start p-2 min-w-[400px]">
                         <div className="flex flex-col pr-4">
                           <MenubarItem className="group">
-                            <Link to="/custom-ai-agents" className="gap-2 flex items-start">
+                            <Link
+                              to="/custom-ai-agents"
+                              className="gap-2 flex items-start"
+                            >
                               <Headset size={18} className="mt-1" />
                               <span className="flex flex-col text-left text-[16px] w-38">
                                 <span className="group-hover:text-blue-500 font-medium">
                                   Custom Ai Agents
                                 </span>
                                 <p className="text-[12px] text-gray-500">
-                                  Automate end-to-end workflows with tailored solution
+                                  Automate end-to-end workflows with tailored
+                                  solution
                                 </p>
                               </span>
-                              </Link>
+                            </Link>
                           </MenubarItem>
                           <hr className="h-[0.5px] bg-gray-300 w-full" />
                           <MenubarItem className="group">
-                            <Link to='/aiservices' className="flex items-start gap-2">
+                            <Link
+                              to="/aiservices"
+                              className="flex items-start gap-2"
+                            >
                               <Handshake size={18} className="mt-1" />
                               <span className="flex flex-col text-left text-[16px] w-38">
                                 <span className="group-hover:text-blue-500 font-medium">
-
                                   All Services For StartUp
                                 </span>
                                 <p className="text-[12px] text-gray-500">
@@ -111,7 +117,8 @@ const Header = () => {
                                   Why TEN AI ?
                                 </span>
                                 <p className="text-[12px] text-gray-500">
-                                  Build reliable and enterprise ready Ai with TENAI
+                                  Build reliable and enterprise ready Ai with
+                                  TENAI
                                 </p>
                               </span>
                             </div>
@@ -129,7 +136,8 @@ const Header = () => {
                               Retail
                             </span>
                             <p className="text-[12px] text-gray-500">
-                              AI Agents for sales, operations, and customer delight
+                              AI Agents for sales, operations, and customer
+                              delight
                             </p>
                           </span>
                         </div>
@@ -154,7 +162,7 @@ const Header = () => {
                       <div className="flex flex-col gap-4 p-2">
                         <div className="flex items-start gap-2 group">
                           <Briefcase size={18} className="mt-1" />
-						  
+
                           <span className="flex flex-col text-left text-[16px] w-38">
                             <span className="group-hover:text-blue-500 font-medium">
                               Customer Stories
@@ -164,12 +172,13 @@ const Header = () => {
 
                         <div className="flex items-start gap-2 group">
                           <Newspaper size={18} className="mt-1" />
-						  
-                          <span className="flex flex-col text-left text-[16px] w-38">
-                            <span className="group-hover:text-blue-500 font-medium">
-                              Latest Insights
+                          <Link to="/explore-blogs">
+                            <span className="flex flex-col text-left text-[16px] w-38">
+                              <span className="group-hover:text-blue-500 font-medium">
+                                Latest Insights
+                              </span>
                             </span>
-                          </span>
+                          </Link>
                         </div>
                       </div>
                     )}
